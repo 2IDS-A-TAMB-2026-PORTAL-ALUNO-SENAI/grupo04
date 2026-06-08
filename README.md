@@ -2,6 +2,12 @@
 
 Projeto desenvolvido para a *Situação de Aprendizagem Desafiadora 2*, com o objetivo de criar uma interface web moderna, responsiva e acessível para o cadastro de alunos em cursos do SENAI.
 
+### Integrantes do projeto
+* Isabella Silva Fernandes Garcia
+* Mariana Biscaino Caiafa Ribeiro
+* Louis Miguel Dias Valentin
+* Felipe Donizetti Ribeiro
+
 ## 🚀 Tecnologias Utilizadas
 
 * HTML5
