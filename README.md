@@ -40,14 +40,13 @@ Projeto desenvolvido para a *Situação de Aprendizagem Desafiadora 2*, com o ob
 
 ## 📂 Estrutura do Projeto
 
-text
-📁 portal-aluno-senai
-│── index.html
-│── style.css
-│── script.js
+```text
+portal-alumno-senai/
+├── index.html
+├── style.css
+├── script.js
 └── README.md
-
-
+```
 ---
 
 ## ⚙️ Como Executar
