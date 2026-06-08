@@ -1,0 +1,219 @@
+O que a página precisa ter
+1. Cabeçalho (Header)
+
+No topo da página:
+
+Logo ou texto "Portal do Aluno SENAI"
+Menu responsivo do Bootstrap com opções como:
+Início
+Cursos
+Cadastro
+Contato
+
+Exemplo:
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+2. Botões de acessibilidade
+
+Devem ficar visíveis no topo.
+
+Botão Alto Contraste
+
+Ao clicar:
+
+Fundo escuro
+Texto claro
+Ao clicar novamente volta ao normal
+Botão A+
+
+Aumenta o tamanho da fonte.
+
+Botão A-
+
+Diminui o tamanho da fonte.
+
+Com limites para não ficar enorme nem muito pequena.
+
+3. Banner Principal (Hero Section)
+
+Logo abaixo do menu.
+
+Deve conter:
+
+Título
+Bem-vindo ao Portal do Aluno SENAI
+Texto
+Realize seu cadastro e tenha acesso aos cursos oferecidos pelo SENAI.
+Botão
+Realizar Cadastro
+
+Ao clicar pode rolar até o formulário.
+
+4. Formulário de Cadastro
+
+Utilizando Bootstrap.
+
+Campos obrigatórios:
+
+Nome Completo
+<input type="text">
+E-mail
+<input type="email">
+Telefone
+<input type="tel">
+Curso Desejado
+<select>
+
+Exemplos:
+
+Desenvolvimento de Sistemas
+Mecatrônica
+Administração
+Logística
+Turno (Radio Button)
+Manhã
+Tarde
+Noite
+Aceite dos Termos
+<input type="checkbox">
+5. Validação do Formulário
+
+Antes de enviar:
+
+Verificar se:
+
+Nome preenchido
+Email preenchido
+Telefone preenchido
+Curso escolhido
+Turno selecionado
+Termos aceitos
+6. SweetAlert2
+
+Importar pelo CDN.
+
+Se houver erro
+
+Mostrar:
+
+Swal.fire({
+  icon: 'error',
+  title: 'Campos obrigatórios',
+  text: 'Preencha todos os campos.'
+});
+Se estiver correto
+
+Mostrar:
+
+Swal.fire({
+  icon: 'success',
+  title: 'Cadastro realizado!',
+  text: `Bem-vindo, ${nome}!`
+});
+7. VLibras
+
+Obrigatório.
+
+Adicionar antes do fechamento do </body>:
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+8. Responsividade
+
+Usar Bootstrap:
+
+Container
+Row
+Col
+Cards
+Espaçamentos (mt-5, mb-3, etc.)
+
+A página deve funcionar em:
+
+Computador
+Tablet
+Celular
+9. HTML Semântico
+
+Utilizar:
+
+<header>
+<nav>
+<main>
+<section>
+<form>
+<footer>
+Estrutura sugerida
+Portal do Aluno SENAI
+│
+├── Header
+│   ├── Logo
+│   ├── Menu
+│   └── Botões de acessibilidade
+│
+├── Banner Principal
+│   ├── Título
+│   ├── Texto
+│   └── Botão Cadastro
+│
+├── Formulário
+│   ├── Nome
+│   ├── Email
+│   ├── Telefone
+│   ├── Curso
+│   ├── Turno
+│   └── Termos
+│
+├── SweetAlert2
+│
+├── VLibras
+│
+└── Footer
+Tecnologias obrigatórias
+HTML5
+CSS3
+JavaScript
+Bootstrap 5 (CDN)
+SweetAlert2 (CDN)
+VLibras
+
+
+
+
+
+
+
+
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                                                                       │
+│                        🎓 PORTAL DO ALUNO SENAI                       │
+│                                                                       │
+│      Sua jornada profissional começa aqui!                            │
+│                                                                       │
+│  Cadastre-se para participar dos cursos oferecidos pelo SENAI,        │
+│  desenvolver novas habilidades e se preparar para o mercado de        │
+│  trabalho com ensino de qualidade e tecnologia.                       │
+│                                                                       │
+│  ✓ Cursos Técnicos                                                    │
+│  ✓ Formação Profissional                                              │
+│  ✓ Certificação Reconhecida                                            │
+│  ✓ Ensino Presencial e Online                                         │
+│                                                                       │
+│       [ REALIZAR CADASTRO ]   [ VER CURSOS ]                          │
+│                                                                       │
+│  👨‍🎓 +10.000 alunos capacitados                                       │
+│  📚 Diversos cursos disponíveis                                       │
+│  🏆 Referência em educação profissional                               │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘

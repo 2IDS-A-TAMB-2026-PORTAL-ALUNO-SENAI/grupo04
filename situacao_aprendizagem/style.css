@@ -1,0 +1,228 @@
+:root {
+    --azul-senai: #2957A4;
+    --azul-escuro-senai: #1d3e75;
+    --laranja-senai: #F15D36;
+    --vermelho-senai: #D3241B;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #2957A4 0%, #2957A4 40%, #F15D36 100%);
+    background-attachment: fixed; /* Mantém o gradiente fixo ao rolar a página */
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #333;
+}
+
+.text-azul-senai {
+    color: var(--azul-senai);
+}
+
+/* =========================
+   NAVBAR & HEADER
+========================= */
+.navbar-senai {
+    background-color: rgba(41, 87, 164, 0.95);
+    backdrop-filter: blur(10px); /* Efeito de vidro sutil na nav */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+}
+
+/* Botões de Acessibilidade */
+.btn-contraste {
+    background-color: var(--vermelho-senai) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.btn-contraste:hover {
+    background-color: #b91d17 !important;
+}
+
+.btn-fonte {
+    background-color: var(--laranja-senai) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold;
+}
+
+.btn-fonte:hover {
+    background-color: #d94c28 !important;
+}
+
+/* =========================
+   FORMULÁRIO DE CADASTRO
+========================= */
+.container-form {
+    max-width: 650px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    /* Sombra mais forte para desgrudar do fundo colorido */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); 
+}
+
+.form-label {
+    color: #495057;
+    font-size: 0.95rem;
+}
+
+.form-control, .form-select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--azul-senai);
+    box-shadow: 0 0 0 4px rgba(41, 87, 164, 0.15);
+}
+
+.btn-enviar-senai {
+    background-color: var(--azul-senai);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.btn-enviar-senai:hover {
+    background-color: var(--azul-escuro-senai);
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer-senai {
+    background-color: rgba(0, 0, 0, 0.3); /* Escurece sutilmente sobre o gradiente */
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 60px 0 20px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-senai h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer-senai h5::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: var(--laranja-senai);
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.footer-senai p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-senai a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.footer-senai a:hover {
+    color: var(--laranja-senai);
+    transform: translateX(4px);
+}
+
+/* =========================
+   MODO ALTO CONTRASTE 
+========================= */
+.contraste {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.contraste .container-form {
+    background-color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    box-shadow: none !important;
+}
+
+.contraste .navbar-senai,
+.contraste .footer-senai {
+    background: #000000 !important;
+    backdrop-filter: none;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+}
+
+.contraste h1, .contraste h2, .contraste h3, .contraste h4, .contraste h5, .contraste h6, 
+.contraste p, .contraste label, .contraste div, .contraste span, .contraste text-azul-senai {
+    color: #ffffff !important;
+}
+
+.contraste a, .contraste .nav-link {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+.contraste .btn, 
+.contraste .btn-enviar-senai,
+.contraste form button[type="submit"] {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #ffffff !important;
+    font-weight: bold !important;
+}
+
+.contraste .form-control, .contraste .form-select, .contraste .bg-light {
+    background: #121212 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.contraste img {
+    filter: grayscale(100%) brightness(2);
+}
+
+/* =========================
+   BOTÃO ENVIAR (COM HOVER)
+========================= */
+.btn-enviar-senai {
+    background-color: var(--azul-senai);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+}
+
+.btn-enviar-senai:hover {
+    background-color: var(--azul-escuro-senai); /* Cor azul mais profunda */
+    color: white;
+    transform: translateY(-2px); /* Eleva o botão de leve */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra mais marcante no hover */
+}
+
+.btn-enviar-senai:active {
+    transform: translateY(1px); /* Efeito de 'afundar' ao ser clicado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

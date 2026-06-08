@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sistema SENAI</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+    <nav class="navbar navbar-expand-lg navbar-senai shadow">
+        <div class="container">
+
+            <div class="img">
+                <img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png" height="50px" margin-right="10px">
+            </div>
+
+            <button class="navbar-toggler bg-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex gap-2">
+                    <button type="button" id="contrasteBtn" class="btn btn-contraste btn-sm">
+                        Alto Contraste
+                    </button>
+
+                    <button id="aumentarFonte" class="btn btn-fonte btn-sm">
+                        A+
+                    </button>
+
+                    <button id="diminuirFonte" class="btn btn-fonte btn-sm">
+                        A-
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+    
+    <section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Texto -->
+            <div class="col-lg-6">
+                <h1 class="display-3 fw-bold mb-4" style="color: #dce4ec;">
+                    Bem-vindo ao Portal do Aluno SENAI
+                </h1>
+
+                <p class="lead mb-4" style="color: #dce4ec;">
+                    Cadastre-se para participar dos cursos oferecidos pelo SENAI,
+                    desenvolver novas habilidades e se preparar para o mercado
+                    de trabalho com ensino de qualidade, tecnologia e inovação.
+                </p>
+
+               <div class="row g-3 mb-4">
+
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">📚</h5>
+                <p class="card-text">
+                    Cursos Técnicos e Profissionalizantes
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">🏆</h5>
+                <p class="card-text">
+                    Certificação Reconhecida Nacionalmente
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">👨‍🏫</h5>
+                <p class="card-text">
+                    Professores Especializados
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">💻</h5>
+                <p class="card-text">
+                    Ensino Presencial e Online
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="cadastro.html" class="btn btn-light btn-lg fw-bold">
+                        Realizar Cadastro
+                    </a>
+
+                    <a href="cursos.html" class="btn btn-outline-light btn-lg">
+                        Ver Cursos
+                    </a>
+                </div>
+
+                <div class="row mt-5 text-center">
+                    <div class="col-4">
+                        <h3 class="fw-bold" style="color: #dce4ec;">+3</h3>
+                        <small style="color: #dce4ec;">Cursos</small>
+                    </div>
+
+                    <div class="col-4">
+                        <h3 class="fw-bold" style="color: #dce4ec;">5 mil+</h3>
+                        <small style="color: #dce4ec;">Alunos</small>
+                    </div>
+
+                    <div class="col-4">
+                        <h3 class="fw-bold" style="color: #dce4ec;">100%</h3>
+                        <small style="color: #dce4ec;">Qualidade</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagem -->
+            <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+                    alt="Alunos estudando"
+                    class="img-fluid rounded shadow-lg"
+                >
+            </div>
+
+        </div>
+    </div>
+</section>
+<hr>
+<footer id="contato" class="footer-senai">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <img
+                    src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png"
+                    alt="Logo SENAI"
+                    height="50"
+                >
+
+                <p class="mt-3">
+                    O Portal do Aluno SENAI oferece acesso aos cursos,
+                    oportunidades e recursos para o desenvolvimento profissional.
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Links Rápidos</h5>
+
+                <ul class="list-unstyled">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contato</h5>
+
+                <p>📧 contato@senai.com.br</p>
+                <p>📞 (19) 4002-8922</p>
+                <p>📍 Tambaú - SP</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+            <p class="mb-0">
+                © 2026 Portal do Aluno SENAI - Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+</footer>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="script.js"></script>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+</html>

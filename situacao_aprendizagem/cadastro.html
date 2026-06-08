@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - SENAI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-senai shadow-sm py-3">
+        <div class="container">
+            <div class="img">
+                <img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png" height="40px" class="me-3" alt="Logo SENAI">
+            </div>
+
+            <button class="navbar-toggler bg-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="cadastro.html">Cadastro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+
+                <div class="d-flex gap-2 alignment-buttons">
+                    <button type="button" id="contrasteBtn" class="btn btn-contraste btn-sm px-3">Alto Contraste</button>
+                    <button id="aumentarFonte" class="btn btn-fonte btn-sm">A+</button>
+                    <button id="diminuirFonte" class="btn btn-fonte btn-sm">A-</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="py-5">
+    <div class="container">
+        <div class="container-form">
+            <h1 class="text-center mb-2 text-azul-senai fw-bold">Cadastro de Aluno</h1>
+            <p class="text-center text-muted mb-4">Preencha os campos abaixo para realizar sua inscrição.</p>
+
+            <form id="formCadastro">
+                <div class="mb-3">
+                    <label for="nome" class="form-label fw-semibold">Nome completo</label>
+                    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cpf" class="form-label fw-semibold">CPF</label>
+                        <input type="text" id="cpf" class="form-control" placeholder="000.000.000-00">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="tel" class="form-label fw-semibold">Telefone</label>
+                        <input type="tel" id="tel" class="form-control" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">E-mail</label>
+                    <input type="email" id="email" class="form-control" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="mb-3">
+                    <label for="curso" class="form-label fw-semibold">Curso desejado</label>
+                    <select id="curso" class="form-select">
+                        <option value="">Selecione um curso</option>
+                        <option>Empreender SENAI</option>
+                        <option>Design Thinking</option>
+                        <option>Cidadania Digital e Uso Consciente da Internet</option>
+                        <option>Desvendando a Indústria 4.0</option>
+                        <option>Fundamentos da Gestão de Projetos Aplicados na Indústria</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold d-block">Turno de preferência</label>
+                    <div class="d-flex gap-4 mt-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turno" id="turnoManha" value="Manhã">
+                            <label class="form-check-label" for="turnoManha">Manhã</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turno" id="turnoTarde" value="Tarde">
+                            <label class="form-check-label" for="turnoTarde">Tarde</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turno" id="turnoNoite" value="Noite">
+                            <label class="form-check-label" for="turnoNoite">Noite</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check mb-4 bg-light p-3 rounded border border-light-subtle">
+                    <input class="form-check-input ms-0 me-2" type="checkbox" id="termos">
+                    <label class="form-check-label" for="termos">
+                        Aceito integralmente os <a href="#" class="text-decoration-underline text-azul-senai">termos e condições</a> de matrícula.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-enviar-senai w-100 py-2 fw-bold text-uppercase shadow">
+                    Enviar cadastro
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer id="contato" class="footer-senai">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo-1.png" alt="Logo SENAI" height="45" class="bg-white p-2 rounded">
+                <p class="mt-3 text-white-50">
+                    O Portal do Aluno SENAI oferece acesso aos cursos, oportunidades e recursos para o desenvolvimento profissional.
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 ps-md-5">
+                <h5>Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contato</h5>
+                <p class="mb-2">📧 contato@senai.com.br</p>
+                <p class="mb-2">📞 (19) 4002-8922</p>
+                <p class="mb-0">📍 Tambaú - SP</p>
+            </div>
+        </div>
+
+        <hr class="my-4 opacity-25">
+
+        <div class="text-center text-white-50 fs-7">
+            <p class="mb-0">© 2026 Portal do Aluno SENAI - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+<script src="ValidaCadastro.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</body>
+</html>
